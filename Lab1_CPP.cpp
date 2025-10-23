@@ -1,11 +1,11 @@
-#include <iostream>
+#include <iostream>       // rozwiazanie poprawne
 #include <vector>
 #include <random>
 using namespace std;
 class Car
 {
 public:
-    string make;
+    string make;  // w wiekszosci przypadkow atrybuty powinny byc prywatne
     string model;
     int year;
     int currentYear;
