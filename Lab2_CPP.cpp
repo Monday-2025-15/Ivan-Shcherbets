@@ -1,4 +1,4 @@
-#include <iostream>
+#include <iostream>    // rozwiazanie poprawne
 using namespace std;
 class Samochod
 {
@@ -27,7 +27,7 @@ public:
 class Tablica
 {
 private:
-    int* tablica;
+    int* tablica;   // warto, by i rozmiar tablicy byl atrybutem
 public:
     Tablica()
     {
@@ -42,7 +42,7 @@ public:
         delete[] tablica;
     }
 };
-int main(int argc, char* argv[])
+int main(int argc, char* argv[])  // "oszczedny" ten main...
 {
     Samochod car;
     Tablica tab(5);
