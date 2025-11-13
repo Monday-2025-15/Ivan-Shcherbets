@@ -1,5 +1,6 @@
 #include <iostream>
-#include <algorithm>
+#include <algorithm>  // w calym programie nie ma ani jednego konstruktora, to nie jest zwyczajowa praktyka
+// bardzo prosze uzupelnic rozwiazanie
 using namespace std;
 
 class Osoba{
@@ -42,7 +43,7 @@ class Nauczyciel : public Pracownik{
 		string przedmiot;
 	public:
 	void SetPrzedmiot(string przedmiot) {this->przedmiot = przedmiot;}
-	void pokazDane()
+	void pokazDane()  // frament tej funkcji moglby byc zdefiniowany w nadklasie - nie trzeba by go powielac w podklasach
 	{
 		cout << "stanowisko = " << stanowisko
 			<< "\nwynagrodzenie = " << wynagrodzenie
