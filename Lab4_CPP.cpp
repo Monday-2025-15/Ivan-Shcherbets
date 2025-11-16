@@ -11,6 +11,12 @@ class Osoba{
 		string email;
 		string telefon;
 	public:
+		Osoba(string imie, string nazwisko, int wiek): imie(imie), nazwisko(nazwisko), wiek(wiek){}
+		Osoba(string imie, string nazwisko, int wiek, string email, string telefon) : imie(imie), nazwisko(nazwisko), wiek(wiek)
+		{
+			SetEmail(email);
+			SetTelefon(telefon);
+		}
 		string GetImie() {return imie;}
 		string GetNazwisko() {return nazwisko;}
 		int GetWiek() {return wiek;}
@@ -35,52 +41,51 @@ class Pracownik{
 	string stanowisko;
 	float wynagrodzenie;
 	public:
+	Pracownik(string stanowisko, float wynagrodzenie) :stanowisko(stanowisko), wynagrodzenie(wynagrodzenie){}
 	void SetStanowisko(string stanowisko) {this->stanowisko=stanowisko;}
 	void SetWynagrodzenie(float wynagrodzenie) {this->wynagrodzenie=wynagrodzenie;}
+	virtual void pokazDane()
+	{
+		cout << "stanowisko = " << stanowisko
+			<< "\nwynagrodzenie = " << wynagrodzenie
+	}
 };
 class Nauczyciel : public Pracownik{
 	private:
 		string przedmiot;
 	public:
+	Nauczyciel(string stanowisko, float wynagrodzenie, string przedmiot) : Pracownik(stanowisko, wynagrodzenie), przedmiot(przedmiot){}
 	void SetPrzedmiot(string przedmiot) {this->przedmiot = przedmiot;}
 	void pokazDane()  // frament tej funkcji moglby byc zdefiniowany w nadklasie - nie trzeba by go powielac w podklasach
 	{
-		cout << "stanowisko = " << stanowisko
-			<< "\nwynagrodzenie = " << wynagrodzenie
-		        << "\nprzedmiot = " << przedmiot << endl;
+		Pracownik::pokazDane();
+		cout  << "\nprzedmiot = " << przedmiot << endl;
 	}
 };
 class Administracja : public Pracownik{
 	private: 
 		string adress;
 	public:
-		Administracja(string adress) {this->adress = adress;}
+		Nauczyciel(string stanowisko, float wynagrodzenie, string adress) : Pracownik(stanowisko, wynagrodzenie), adress(adress){}
         void pokazDane()
         {
-                cout << "stanowisko = " << stanowisko
-                        << "\nwynagrodzenie =  " << wynagrodzenie 
+             Pracownik::pokazDane();
 			<< "\nadress = "<< adress <<  endl;
         }
 };
 int main()
 {
-	Osoba him;
-	him.SetImie("Alex");
-	him.SetNazwisko("Lebron");
-	him.SetWiek(23);
+	Osoba him("Alex", "Lebron", 23");
 	cout << him.GetImie() << endl;
 	cout << him.GetNazwisko() << endl;
 	cout << him.GetWiek() << endl;
 	him.SetTelefon("y4tutreu8g8fdahdu");
 	him.SetEmail("a@g.com");
 	cout << him.GetEmail() << endl;
-	Nauczyciel jeden;
-	jeden.SetStanowisko("One");
-	jeden.SetWynagrodzenie(1);
-	jeden.SetPrzedmiot("algebra");
+	Nauczyciel jeden("One", 1, "algebra");
+	jeden.SetStanowisko("Two");
 	jeden.pokazDane();
-	Administracja admin("49000");
-	admin.SetStanowisko("?");
+	Administracja admin("?", 500,"49000");
 	admin.SetWynagrodzenie(999);
 	admin.pokazDane();
 	return 0;
