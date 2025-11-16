@@ -75,7 +75,7 @@ class Administracja : public Pracownik{
 };
 int main()
 {
-	Osoba him("Alex", "Lebron", 23");
+	Osoba him("Alex", "Lebron", 23);
 	cout << him.GetImie() << endl;
 	cout << him.GetNazwisko() << endl;
 	cout << him.GetWiek() << endl;
