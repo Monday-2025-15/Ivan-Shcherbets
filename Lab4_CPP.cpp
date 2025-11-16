@@ -70,7 +70,7 @@ class Administracja : public Pracownik{
         void pokazDane()
         {
              Pracownik::pokazDane();
-			<< "\nadress = "<< adress <<  endl;
+			cout << "\nadress = "<< adress <<  endl;
         }
 };
 int main()
