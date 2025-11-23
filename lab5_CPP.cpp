@@ -1,4 +1,4 @@
-#include <iostream>
+#include <iostream>  // rozwiazanie w ogolnosci poprawne; prosze uzupelnic o komentarz do zadania nr 6
 using namespace std;
 //1
 class Pojazd1{
@@ -42,7 +42,7 @@ class SamochodProtected : protected Pojazd3 {
 		SamochodProtected() : Pojazd3("Ford","Focus",123) {}
 		string Info()
 		{
-			return "Samochod: " + marka + " " + model + "\n";
+			return "Samochod: " + marka + " " + model + "\n";  // tutaj tez id niedostepne
 		}
 };
 class SamochodPrivate : private Pojazd3 {
@@ -52,7 +52,7 @@ class SamochodPrivate : private Pojazd3 {
         {
             return "Samochod: " + marka + " " + model + "\n"; //id nedostepne
         }
-};
+};   // jaka jest zatem roznica miedzy dziedziczeniem protected a private?
 //7
 class Silnikowy1 {
 protected:
@@ -82,11 +82,11 @@ public:
 		speed++;
 		cout << "Elektryczny samochod przyspiesza, predkosc = " << speed << endl;
 	}
-};
+};   // brak klasy SamochodElektryczny
 //10
 class Pojazd5{
     public:
-       virtual void przyspiesz(){cout << "Pojaz przyspiesza\n";}
+       virtual void przyspiesz(){cout << "Pojaz przyspiesza\n";} // te metode nalezaloby zdefiniowac jako czysto wirtualna
 };
 class Silnikowy2 : public Pojazd5{
 public: virtual void przyspiesz(){cout << "Silnikowy przyspiesza\n";}
