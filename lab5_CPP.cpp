@@ -53,6 +53,7 @@ class SamochodPrivate : private Pojazd3 {
             return "Samochod: " + marka + " " + model + "\n"; //id nedostepne
         }
 };   // jaka jest zatem roznica miedzy dziedziczeniem protected a private?
+//protected zachowuje dostep dla dalszych klas pochodnych a private jego calkowice zamyka
 //7
 class Silnikowy1 {
 protected:
