@@ -1,10 +1,10 @@
-#include <iostream>
+#include <iostream>   
 #include <vector>
 #include <memory>
 
 using namespace std;
 
-class Pojazd{
+class Pojazd{    // szkoda, ze zabraklo destruktorow w klasach pochodnych; rozwiazanie poprawne
 	public:
 		virtual void przyspiesz()=0;
 		virtual void zatrzymaj()=0;
