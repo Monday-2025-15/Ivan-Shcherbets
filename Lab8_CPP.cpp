@@ -1,4 +1,4 @@
-#include <iostream>
+#include <iostream> // rozwiazanie poprawne
 #include <string>
 using namespace std;
 //Singleton
@@ -39,7 +39,8 @@ public:
         cout << "Jadę rowerem po ścieżce." << endl;
     }
 };
-class VehicleFactory {
+class VehicleFactory {   //takze i ta klasa mogła byc klasa abstrakcyjna; w slad za taka klasa mozna bylo zbudowac odpowiednie wytworcze klasy pochodne
+
 public:
     Vehicle* getVehicle(string type) {
         if (type == "CAR") {
@@ -62,7 +63,8 @@ public:
     Pizza(string d, string s, string t)
         : dough(d), sauce(s), topping(t) {}
 
-    class Builder {
+    class Builder {    // tutaj z kolei mozna bylo zdefiniowac hierarchie klas, z klasa abstrakcyjna PizzaBuilder i klasami pochodnymi odpowiedzialnymi za przygotowanie poszczegolnych rodzajow pizzy
+
     private:
         string dough;
         string sauce;
