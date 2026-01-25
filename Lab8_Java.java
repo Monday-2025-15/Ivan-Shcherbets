@@ -1,4 +1,4 @@
-//Singleton
+//Singleton    // rozwiazanie poprawne  // "+" za oba rozwiazania (C++, Java) lacznie
 class DatabaseConnection {
     private static DatabaseConnection instance;
 
@@ -34,7 +34,7 @@ class Bike implements Vehicle {
     }
 }
 
-class VehicleFactory {
+class VehicleFactory {   // uwaga jak w rozwiazaniu w C++
     public Vehicle getVehicle(String type) {
         if ("CAR".equals(type)) {
             return new Car();
@@ -56,7 +56,7 @@ class Pizza {
         this.topping = t;
     }
 
-    public static class Builder {
+    public static class Builder {    // tutaj z kolei, w miejsce wewn. klasy Builder, mozna bylo zdefiniowac zewn. interfejs PizzaBuilder wraz z implementującymi go klasami odpowiedzialnymi za przygotowanie poszczegolnych rodzajow pizzy
         private String dough;
         private String sauce;
         private String topping;
