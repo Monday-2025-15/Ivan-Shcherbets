@@ -1,0 +1,499 @@
+{
+  "items": [
+    {
+      "id": 0,
+      "name": "Note from parents",
+      "desc": "Will save you. Once.",
+      "icon": "Assets/Sprites/Items/note.png",
+      "effects": [
+        { "stat": "Note", "op": "Set", "value": 1 }
+      ]
+    },
+    {
+      "id": 1,
+      "name": "Pencil sharpener",
+      "desc": "Increase damage",
+      "icon": "Assets/Sprites/Items/penSh.png",
+      "effects": [
+        { "stat": "Damage", "op": "Add", "value": 2.0 }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Favorite pencil",
+      "desc": "Increase speed",
+      "icon": "Assets/Sprites/Items/Fpencil.png",
+      "effects": [
+        { "stat": "Speed", "op": "Add", "value": 150 }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Your eyeglasses",
+      "desc": "Increase crit chance and crit damage",
+      "icon": "Assets/Sprites/Items/YourEyeG.png",
+      "effects": [
+        { "stat": "CritChance", "op": "Add", "value": 0.2 },
+        { "stat": "CritDamage", "op": "Add", "value": 0.5 }
+      ]
+    },
+    {
+      "id": 4,
+      "name": "School uniform",
+      "desc": "Decrease your size",
+      "icon": "Assets/Sprites/Items/YourEyeG.png",
+      "effects": [
+        { "stat": "Size", "op": "Mul", "value": 0.75 }
+      ]
+    },
+    {
+      "id": 5,
+      "name": "Geometry textbook",
+      "desc": "Increase crit chance",
+      "icon": "Assets/Sprites/Items/Geom.png",
+      "effects": [
+        { "stat": "CritChance", "op": "Add", "value": 0.2 }
+      ]
+    },
+    {
+      "id": 6,
+      "name": "Geometry notebook",
+      "desc": "Increase weapon size",
+      "icon": "Assets/Sprites/Items/GeomN.png",
+      "effects": [
+        { "stat": "WeaponSize", "op": "Add", "value": 1 }
+      ]
+    },
+    {
+      "id": 7,
+      "name": "Meal",
+      "desc": "Increase your max health, weapon size, damage but decrease speed and increase your size",
+      "icon": "Assets/Sprites/Items/Meal.png",
+      "effects": [
+        { "stat": "MaxHp", "op": "Mul", "value": 2 },
+        { "stat": "Damage", "op": "Add", "value": 1 },
+        { "stat": "WeaponSize", "op": "Add", "value": 1 },
+        { "stat": "Size", "op": "Add", "value": 1 },
+        { "stat": "Speed", "op": "Mul", "value": 0.8 }
+      ]
+    },
+    {
+      "id": 8,
+      "name": "Not your eyeglasses",
+      "desc": "Increase damage and crit damage but decrease crit chance and speed",
+      "icon": "Assets/Sprites/Items/NotYourEye.png",
+      "effects": [
+        { "stat": "Damage", "op": "Add", "value": 1 },
+        { "stat": "CriDamage", "op": "Add", "value": 0.5 },
+        { "stat": "CriChance", "op": "Mul", "value": 0.9 },
+        { "stat": "Speed", "op": "Mul", "value": 0.9 }
+      ]
+    },
+    {
+      "id": 9,
+      "name": "Replacement shoes",
+      "desc": "Increase speed and attack speed",
+      "icon": "Assets/Sprites/Items/Rshoes.png",
+      "effects": [
+        { "stat": "AttackSpeed", "op": "Add", "value": 1 },
+        { "stat": "Speed", "op": "Mul", "value": 1.2 }
+      ]
+    },
+    {
+      "id": 10,
+      "name": "Winter jacket",
+      "desc": "Very cozy. Increase your max health... and size",
+      "icon": "Assets/Sprites/Items/Jacket.png",
+      "effects": [
+        { "stat": "MaxHp", "op": "Mul", "value": 1.5 },
+        { "stat": "Size", "op": "Mul", "value": 1.25 }
+      ]
+    },
+    {
+      "id": 11,
+      "name": "PE textbook",
+      "desc": "You REALLY hate PE class where instead of doing sports you read THIS. You are really angry right now. Damage increase",
+      "icon": "Assets/Sprites/Items/PETB.png",
+      "effects": [
+        { "stat": "Damage", "op": "Mul", "value": 1.5 },
+        { "stat": "AttackSpeed", "op": "Add", "value": 1 }
+      ]
+    },
+    {
+      "id": 12,
+      "name": "Your backpack",
+      "desc": "Full of goodies. Increase all stats",
+      "icon": "Assets/Sprites/Items/backpack.png",
+      "effects": [
+        { "stat": "Damage", "op": "Mul", "value": 1.2 },
+        { "stat": "MaxHp", "op": "Mul", "value": 1.2 },
+        { "stat": "Size", "op": "Mul", "value": 1.2 },
+        { "stat": "WeaponSize", "op": "Mul", "value": 1.2 },
+        { "stat": "Speed", "op": "Mul", "value": 1.2 },
+        { "stat": "CritChance", "op": "Mul", "value": 1.2 },
+        { "stat": "CritDamage", "op": "Mul", "value": 1.2 },
+        { "stat": "AttackSpeed", "op": "Mul", "value": 1.2 }
+      ]
+    },
+    {
+      "id": 13,
+      "name": "Gloves",
+      "desc": "Increase attack speed and weapon size",
+      "icon": "Assets/Sprites/Items/Gloves.png",
+      "effects": [
+        { "stat": "WeaponSize", "op": "Mul", "value": 1.5 },
+        { "stat": "AttackSpeed", "op": "Add", "value": 1 }
+      ]
+    },
+    {
+      "id": 14,
+      "name": "Highlighter",
+      "desc": "Increase crit chance and weapon size",
+      "icon": "Assets/Sprites/Items/Highlighter.png",
+      "effects": [
+        { "stat": "WeaponSize", "op": "Add", "value": 1 },
+        { "stat": "CritChance", "op": "Add", "value": 0.2 }
+      ]
+    },
+    {
+      "id": 15,
+      "name": "Broken ruler",
+      "desc": "Increase damage but decease crit chance",
+      "icon": "Assets/Sprites/Items/Ruler.png",
+      "effects": [
+        { "stat": "Damage", "op": "Add", "value": 2.0 },
+        { "stat": "CritChance", "op": "Mul", "value": 0.9 }
+      ]
+    },
+    {
+      "id": 16,
+      "name": "Meal from home",
+      "desc": "Increase speed and attack speed but decrease max health",
+      "icon": "Assets/Sprites/Items/MealHome.png",
+      "effects": [
+        { "stat": "MaxHp", "op": "Mul", "value": 0.8 },
+        { "stat": "Speed", "op": "Mul", "value": 1.2 },
+        { "stat": "AttackSpeed", "op": "Mul", "value": 1.3 }
+      ]
+    },
+    {
+      "id": 17,
+      "name": "Biology textbook",
+      "desc": "Increase max health",
+      "icon": "Assets/Sprites/Items/BioTB.png",
+      "effects": [
+        { "stat": "MaxHp", "op": "Mul", "value": 2.5 }
+      ]
+    },
+    {
+      "id": 18,
+      "name": "Algebra textbook",
+      "desc": "Increase attack speed and damage",
+      "icon": "Assets/Sprites/Items/AlgebraTB.png",
+      "effects": [
+        { "stat": "AttackSpeed", "op": "Add", "value": 1 },
+        { "stat": "Damage", "op": "Add", "value": 2 }
+      ]
+    },
+    {
+      "id": 19,
+      "name": "Physics textbook",
+      "desc": "Increase damage and crit damage",
+      "icon": "Assets/Sprites/Items/PhysicsTB.png",
+      "effects": [
+        { "stat": "Crit Damage", "op": "Add", "value": 0.5 },
+        { "stat": "Damage", "op": "Add", "value": 2 }
+      ]
+    },
+    {
+      "id": 20,
+      "name": "Geography textbook",
+      "desc": "Increase weapon size and reduce your size",
+      "icon": "Assets/Sprites/Items/GeographyTB.png",
+      "effects": [
+        { "stat": "Weapon size", "op": "Add", "value": 1 },
+        { "stat": "Size", "op": "Mul", "value": 0.75 }
+      ]
+    },
+    {
+      "id": 21,
+      "name": "School duty armband",
+      "desc": "Increase damage, crit damage and attack speed",
+      "icon": "Assets/Sprites/Items/armband.png",
+      "effects": [
+        { "stat": "Crit Damage", "op": "Add", "value": 0.5 },
+        { "stat": "Damage", "op": "Add", "value": 2 },
+        { "stat": "AttackSpeed", "op": "Add", "value": 1}
+      ]
+    },
+    {
+      "id": 22,
+      "name": "Smartphone",
+      "desc": "Decrease your size and health",
+      "icon": "Assets/Sprites/Items/Smartphone.png",
+      "effects": [
+        { "stat": "Size", "op": "Mul", "value": 0.5 },
+        { "stat": "MaxHp", "op": "Mul", "value": 0.5 }
+      ]
+    },
+    {
+      "id": 23,
+      "name": "School diary",
+      "desc": "Increase 2 random stats but also decrease 1",
+      "icon": "Assets/Sprites/Items/diary.png",
+      "effects": [
+        { "stat": "Random", "op": "Mul", "value": 1.3 },
+        { "stat": "Random", "op": "Mul", "value": 1.3 },
+        { "stat": "Random", "op": "Mul", "value": 0.7 }
+      ]
+    },
+    {
+      "id": 24,
+      "name": "Pen",
+      "desc": "Increase damage, speed and 1 random stat",
+      "icon": "Assets/Sprites/Items/pen.png",
+      "effects": [
+        { "stat": "Damage", "op": "Add", "value": 2 },
+        { "stat": "Speed", "op": "Mul", "value": 1.3 },
+        { "stat": "Random", "op": "Mul", "value": 1.3 }
+      ]
+    },
+    {
+      "id": 25,
+      "name": "Literature textbook",
+      "desc": "Increase attack speed and crit damage, reduce damage",
+      "icon": "Assets/Sprites/Items/LitTB.png",
+      "effects": [
+        { "stat": "Damage", "op": "Add", "value": -2 },
+        { "stat": "AttackSpeed", "op": "Add", "value": 1 },
+        { "stat": "CritDamage", "op": "Mul", "value": 1.2 }
+      ]
+    },
+    {
+      "id": 26,
+      "name": "Health basics textbook",
+      "desc": "So useless almost \"ghost\" subject. Your bullets now also ghost",
+      "icon": "Assets/Sprites/Items/HBTB.png",
+      "effects": [
+        { "stat": "Ghost", "op": "Set", "value": 1 },
+        { "stat": "MaxHp", "op": "Mul", "value": 1.2 }
+      ]
+    },
+    {
+      "id": 27,
+      "name": "Physics laboratory work on the topic of optics",
+      "desc": "Easy. You learned new trick",
+      "icon": "Assets/Sprites/Items/Lab.png",
+      "effects": [
+        { "stat": "Ricochet", "op": "Set", "value": 1 }
+      ]
+    },
+    {
+      "id": 28,
+      "name": "Sunglasses",
+      "desc": "Gives you AURA(shield)",
+      "icon": "Assets/Sprites/Items/SunGlasses.png",
+      "effects": [
+        { "stat": "Shield", "op": "Set", "value": 1 }
+      ]
+    },
+    {
+      "id": 29,
+      "name": "Chemistry notebook",
+      "desc": "When you hurt enemies you have chance to create small explosion",
+      "icon": "Assets/Sprites/Items/ChemTB.png",
+      "effects": [
+        { "stat": "Explosive", "op": "Set", "value": 1 }
+      ]
+    },
+    {
+      "id": 30,
+      "name": "Empty pens",
+      "desc": "When you hurt enemies you have chance to regenerate heath",
+      "icon": "Assets/Sprites/Items/epens.png",
+      "effects": [
+        { "stat": "Vampire", "op": "Set", "value": 1 }
+      ]
+    },
+    {
+      "id": 31,
+      "name": "Сorrector",
+      "desc": "Enable passive regeneration",
+      "icon": "Assets/Sprites/Items/Сorrector.png",
+      "effects": [
+        { "stat": "Regen", "op": "Set", "value": 1 }
+      ]
+    },
+    {
+      "id": 32,
+      "name": "Class clock",
+      "desc": "All Gadgets that have cooldown based on rooms now have 90 seconds cooldown",
+      "icon": "Assets/Sprites/Items/clock.png",
+      "effects": [
+        { "stat": "Clock", "op": "Set", "value": 1 }
+      ]
+    },
+    {
+      "id": 33,
+      "name": "Big photorealistic eye",
+      "desc": "Huh?",
+      "icon": "Assets/Sprites/Items/eye.png",
+      "effects": []
+    },
+    {
+      "id": 34,
+      "name": "Third hand",
+      "desc": "Very helpful",
+      "icon": "Assets/Sprites/Items/fingergun.png",
+      "effects": []
+    },
+
+    {
+      "id": 35,
+      "name": "Juice",
+      "desc": "Restore 50% health",
+      "icon": "Assets/Sprites/Items/juice.png",
+      "effects": [
+        { "stat": "Hp", "op": "Set", "value": 0.5 }
+      ]
+    },
+    {
+      "id": 36,
+      "name": "Water",
+      "desc": "Restore 100% health",
+      "icon": "Assets/Sprites/Items/water.png",
+      "effects": [
+        { "stat": "Hp", "op": "Set", "value": 1 }
+      ]
+    },
+    {
+      "id": 37,
+      "name": "PencilCase",
+      "desc": "Doubles 3 random stats for 10 seconds",
+      "icon": "Assets/Sprites/Items/Pencilcase.png",
+      "effects": [
+        { "stat": "Random", "op": "Mul", "value": 2 },
+        { "stat": "Random", "op": "Mul", "value": 2 },
+        { "stat": "Random", "op": "Mul", "value": 2 }
+      ]
+    },
+    {
+      "id": 38,
+      "name": "Battery",
+      "desc": "Restore gadget cooldown",
+      "icon": "Assets/Sprites/Items/battery.png",
+      "effects": []
+    },
+    {
+      "id": 39,
+      "name": "Debug card",
+      "desc": "Defeat every enemy in the room",
+      "icon": "Assets/Sprites/Items/code.png",
+      "effects": []
+    },
+    {
+      "id": 40,
+      "name": "Evacuation exit",
+      "desc": "Ragequit)))",
+      "icon": "Assets/Sprites/Items/Evac.png",
+      "effects": []
+    },
+    {
+      "id": 41,
+      "name": "Alarm",
+      "desc": "Very annoying. Increase your damage and attack speed for 15s",
+      "icon": "Assets/Sprites/Items/Bells.png",
+      "effects": [
+        { "stat": "Damage", "op": "Mul", "value": 2 },
+        { "stat": "AttackSpeed", "op": "Mul", "value": 1.5 }
+      ]
+    },
+
+    {
+      "id": 42,
+      "name": "Language textbook",
+      "desc": "Increase your damage but reduce your attack speed for current room",
+      "icon": "Assets/Sprites/Items/LanTB.png",
+      "cooldown": -2,
+      "effects": [
+        { "stat": "Damage", "op": "Mul", "value": 2 },
+        { "stat": "AttackSpeed", "op": "Mul", "value": 0.75 }
+      ]
+    },
+    {
+      "id": 43,
+      "name": "English language textbook",
+      "desc": "Increase your attack speed but reduce your damage for current room",
+      "icon": "Assets/Sprites/Items/EngTB.png",
+      "cooldown": -2,
+      "effects": [
+        { "stat": "Damage", "op": "Mul", "value": 0.75 },
+        { "stat": "AttackSpeed", "op": "Mul", "value": 2 }
+      ]
+    },
+    {
+      "id": 44,
+      "name": "History textbook",
+      "desc": "Revert your position and health to 3 seconds prior",
+      "icon": "Assets/Sprites/Items/HistoryTB.png",
+      "cooldown": 10,
+      "effects": []
+    },
+    {
+      "id": 45,
+      "name": "PE uniform",
+      "desc": "Gives ability to blink",
+      "icon": "Assets/Sprites/Items/Tshirt.png",
+      "cooldown": 2,
+      "effects": []
+    },
+    {
+      "id": 46,
+      "name": "Red pen",
+      "desc": "You have 100% crit chance for current room",
+      "icon": "Assets/Sprites/Items/Redpen.png",
+      "cooldown": -5,
+      "effects": [
+        { "stat": "CritChance", "op": "Set", "value": 1 }
+      ]
+    },
+    {
+      "id": 47,
+      "name": "First aid kit",
+      "desc": "Makes you invincible for 10 seconds",
+      "icon": "Assets/Sprites/Items/Medkit.png",
+      "cooldown": 120,
+      "effects": []
+    },
+    {
+      "id": 48,
+      "name": "Chemistry notebook",
+      "desc": "Create explosion at your position",
+      "icon": "Assets/Sprites/Items/ChemNB.png",
+      "cooldown": 5,
+      "effects": []
+    },
+
+    {
+      "id": 49,
+      "name": "Fire extinguisher",
+      "desc": "Fire extinguisher. Harmless. Annoying",
+      "icon": "Assets/Sprites/Items/extinguisher.png",
+      "effects": []
+    },
+    {
+      "id": 50,
+      "name": "Laser",
+      "desc": "Laser. Harmless. You have seen something like this back in physics lab",
+      "icon": "Assets/Sprites/Items/laser.png",
+      "effects": []
+    },
+    {
+      "id": 51,
+      "name": "Finger Pistol",
+      "desc": "Finger Pistol. Harmless",
+      "icon": "Assets/Sprites/Items/fingergun.png",
+      "effects": []
+    }
+  ]
+}
